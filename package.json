@@ -1,0 +1,24 @@
+{
+  "name": "html-css-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "parcel": "parcel watch index.html",
+    "parcel.build": "parcel build index.html --public-url ./ --out-dir build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SRferrero/html-css-workshop.git"
+  },
+  "author": "sam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SRferrero/html-css-workshop/issues"
+  },
+  "homepage": "https://github.com/SRferrero/html-css-workshop#readme",
+  "devDependencies": {
+    "parcel": "^1.11.0",
+    "sass": "^1.16.1"
+  }
+}
