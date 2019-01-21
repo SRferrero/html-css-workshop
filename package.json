@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "parcel": "parcel watch index.html",
-    "parcel.build": "parcel build index.html --public-url ./ --out-dir build/"
+    "parcel": "parcel watch src/index.html",
+    "parcel.build": "parcel build src/index.html --public-url ./ --out-dir build/"
   },
   "repository": {
     "type": "git",
