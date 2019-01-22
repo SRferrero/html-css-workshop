@@ -18,13 +18,13 @@
       <li><a href="#pagecontent" class="visuallyhidden">skip to main content</a></li>
     </ul>
 
-    <header role="banner" class="page-header">
+    <section role="banner" class="page-header">
 
-      <h1 class="page-heading">
+      <h2 class="page-heading">
         The Awesome Project
-      </h1>
+      </h2>
 
-      <nav role="navigation" class="navigation-bar" id="navigation" tabindex="-1">
+      <div role="navigation" class="navigation-bar" id="navigation" tabindex="-1">
 
         <ul class="navlist">
           <li class="navlist__item"><a href="http://www.google.es" class="navlist__link">home</a></li>
@@ -34,39 +34,39 @@
           <li class="navlist__item"><a href="http://www.google.es" class="navlist__link">contact</a></li>
         </ul>
 
-      </nav>
+      </div>
 
-    </header>
+    </section>
 
     <main role="main" class="page-content" id="pagecontent" tabindex="-1">
 
-      <h2>
-        Our mission
-      </h2>
 
-      <p>
-        Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-      </p>
+      Our mission
 
-      <h3>
-        What we are going to do
-      </h3>
 
-      <p>
-        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-      </p>
+
+      Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+
+
+
+      What we are going to do
+
+
+
+      Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+
 
       <h3>
         How we plan to do it
       </h3>
 
-      <blockquote class="quote">
+      <!-- find the tag and the class atribute -->
 
         <p class="quote__text">Not everything that can be counted counts, and not everything that counts can be counted.</p>
 
         <footer class="quote__info">Albert Einstein</footer>
 
-      </blockquote>
+      <!-- close tag -->
 
       <p>
         Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
@@ -75,105 +75,46 @@
       <h3>
         Actions
       </h3>
-
-      <ol class="ordered-list">
+<!-- There are 2 types of lists, ordered and unordered, and the class for the style are: class="unordered-list"  class="ordered-list"-->
+      <!-- one type of list -->
         <li class="ordered-list__item">Make a plan</li>
         <li class="ordered-list__item">Discuss the plan</li>
         <li class="ordered-list__item">Amend the plan</li>
         <li class="ordered-list__item">Execute the plan
-          <ul class="unordered-list">
+          <!-- open second list -->
             <li class="unordered-list__item">Build prototype</li>
             <li class="unordered-list__item">Build the real thing</li>
             <li class="unordered-list__item">Release all the things</li>
-          </ul>
+          <!-- close second list -->
         </li>
-      </ol>
+      <!-- close first list -->
 
       <h3>
         Resources
       </h3>
 
-      <table class="table">
-
-        <caption class="table__caption">People</caption>
-
-        <tbody>
-
-          <tr class="table__row">
-            <th scope="row" class="table__row-header">Rick Nielsen</th>
-            <td class="table__cell">Project Lead</td>
-          </tr>
-
-          <tr class="table__row">
-            <th scope="row" class="table__row-header">Tom Petersson</th>
-            <td class="table__cell">Team Lead</td>
-          </tr>
-
-          <tr class="table__row">
-            <th scope="row" class="table__row-header">Robin Zander</th>
-            <td class="table__cell">Lead developer</td>
-          </tr>
-
-          <tr class="table__row">
-            <th scope="row" class="table__row-header">Bun E. Carlos</th>
-            <td class="table__cell">Developer</td>
-          </tr>
-
-        </tbody>
-
-      </table>
-
-      <table class="table">
-
-        <caption class="table__caption">Facts and figures</caption>
-
-        <tbody>
-
-          <tr class="table__row">
-            <th scope="row" class="table__row-header">Budget</th>
-            <td class="table__cell">US$ 200,000.00</td>
-          </tr>
-
-          <tr class="table__row">
-            <th scope="row" class="table__row-header">Duration</th>
-            <td class="table__cell">6 months</td>
-          </tr>
-
-          <tr class="table__row">
-            <th scope="row" class="table__row-header">Max cost overrun</th>
-            <td class="table__cell">10%</td>
-          </tr>
-
-        </tbody>
-
-      </table>
+      <!-- how would you build that content? Would you use css? -->
 
       <h3>
         Please let us have your suggestions
       </h3>
 
+<!-- What are we missing inside the form and what is wrong in it? -->
+
       <form action="mailthething" class="form">
 
-        <fieldset class="form__section">
+        <legend class="form__title">Your suggestion</legend>
 
-          <legend class="form__title">Your suggestion</legend>
+        <span for="form-suggestion" class="visuallyhidden">Write your suggestion</span>
+        <textarea class="form__text-block" name="suggestion" id="form-suggestion" cols="30" rows="10"></textarea>
 
-          <label for="form-suggestion" class="visuallyhidden">Write your suggestion</label>
-          <textarea class="form__text-block" name="suggestion" id="form-suggestion" cols="30" rows="10"></textarea>
+        <legend class="form__title">Your contact info</legend>
 
-        </fieldset>
+        <span class="form__label" for="form-name">Your name</span>
+        <input class="form__input" type="text" id="form-name" name="name">
 
-        <fieldset class="form__section">
-
-          <legend class="form__title">Your contact info</legend>
-
-          <label class="form__label" for="form-name">Your name</label>
-          <input class="form__input" type="text" id="form-name" name="name">
-
-          <label class="form__label" for="form-email">Your email address</label>
-          <input class="form__input" type="email" id="form-email" name="email">
-
-        </fieldset>
+        <span class="form__label" for="form-email">Your email address</span>
+        <input class="form__input" type="email" id="form-email" name="email">
 
         <button class="form__button" type="submit">Send</button>
 
@@ -181,20 +122,7 @@
 
     </main>
 
-    <footer role="contentinfo" class="page-footer">
-
-      <h2>
-        Other information
-      </h2>
-
-      <ul class="unordered-list">
-        <li class="unordered-list__item"><a href="http://www.google.es">Privacy statement</a></li>
-        <li class="unordered-list__item"><a href="http://www.google.es">customer service</a></li>
-        <li class="unordered-list__item"><a href="http://www.google.es">location and directions</a></li>
-        <li class="unordered-list__item"><a href="http://www.google.es">disclaimer</a></li>
-      </ul>
-
-    </footer>
+<!-- how should we end this? Links can be used with the list from the header apply class="unordered-list__item"-->
 
   </body>
 
