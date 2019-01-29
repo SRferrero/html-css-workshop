@@ -154,24 +154,32 @@
 
 <!-- What are we missing inside the form and what is wrong in it? -->
 
-      <form action="mailthething" class="form">
+  <form action="mailthething" class="form">
 
-        <legend class="form__title">Your suggestion</legend>
+    <fieldset class="form__section">
 
-        <span for="form-suggestion" class="visuallyhidden">Write your suggestion</span>
-        <textarea class="form__text-block" name="suggestion" id="form-suggestion" cols="30" rows="10"></textarea>
+      <legend class="form__title">Your suggestion</legend>
 
-        <legend class="form__title">Your contact info</legend>
+      <label for="form-suggestion" class="visuallyhidden">Write your suggestion</label>
+      <textarea class="form__text-block" name="suggestion" id="form-suggestion" cols="30" rows="10"></textarea>
 
-        <span class="form__label" for="form-name">Your name</span>
-        <input class="form__input" type="text" id="form-name" name="name">
+    </fieldset>
 
-        <span class="form__label" for="form-email">Your email address</span>
-        <input class="form__input" type="email" id="form-email" name="email">
+    <fieldset class="form__section">
 
-        <button class="form__button" type="submit">Send</button>
+      <legend class="form__title">Your contact info</legend>
 
-      </form>
+      <label class="form__label" for="form-name">Your name</label>
+      <input class="form__input" type="text" id="form-name" name="name">
+
+      <label class="form__label" for="form-email">Your email address</label>
+      <input class="form__input" type="email" id="form-email" name="email">
+
+    </fieldset>
+
+    <button class="form__button" type="submit">Send</button>
+
+  </form>
 
     </main>
 
